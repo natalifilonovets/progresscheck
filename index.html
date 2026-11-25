@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101014">
+  <meta name="description" content="An unofficial BABYMONSTER fan quiz. Take the stage with 118 English vocabulary questions.">
+  <title>BABYMONSTER · Vocabulary World Tour</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="questions.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="masthead shell">
+    <span class="brand"><span aria-hidden="true">✦</span> BABYMONSTER</span>
+    <span class="edition">UNOFFICIAL FAN EDITION</span>
+  </header>
+  <main id="app" class="shell"></main>
+  <footer class="shell footer"><span>BABYMONSTER · VOCABULARY WORLD TOUR</span><span>ENGLISH B2–C1</span></footer>
+  <template id="intro">
+    <section class="hero" aria-labelledby="title">
+      <div class="cover">
+        <p class="eyebrow">BABYMONSTER · FAN EDITION</p>
+        <h1 id="title" tabindex="-1">VOCABULARY<br><em>WORLD TOUR</em></h1>
+        <p class="tagline">118 words. One stage. Your comeback.</p>
+      </div>
+      <div class="pass" aria-hidden="true">
+        <span>BACKSTAGE PASS</span><strong>01</strong><span>BM / ENCORE / STAGE</span><i></i>
+      </div>
+    </section>
+    <section class="setup" aria-labelledby="mode-title">
+      <h2 id="mode-title">Choose your set</h2>
+      <p id="notice" class="notice" role="status" hidden></p>
+      <form id="setup">
+        <fieldset>
+          <legend class="sr-only">Quiz mode</legend>
+          <label class="mode"><input type="radio" name="mode" value="full" checked><span><strong>FULL WORLD TOUR · 118</strong><small>The complete vocabulary set across four stages.</small></span></label>
+          <label class="mode"><input type="radio" name="mode" value="quick"><span><strong>QUICK COMEBACK · 30</strong><small>Thirty questions sampled across all nine categories.</small></span></label>
+        </fieldset>
+        <div class="actions"><button class="primary" id="start">START THE SHOW</button><button type="button" id="resume" hidden>RESUME SHOW</button></div>
+      </form>
+      <p class="fine">Four choices · instant feedback · save your progress</p>
+    </section>
+  </template>
+</body>
+</html>
